@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Agua</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+ 	<link href="img/recicla.png" type="image/x-icon" rel="shortcut icon" />
+
+</head>
+<header>
+		<figure><img src="img/conserva.jpg" alt="" /></figure>
+		<h1 class="hombre">AGUA</h1>
+		<nav>
+			<ul>
+				<li><a href="#">CUIDEMOS EL AGUA</a></li>
+				
+			</ul>
+		</nav>
+		<nav class="seleccion">
+			<ul class="lista">
+				<li class="li"><a href="index.html">Inicio</a></li>
+				<li class="li"><a href="multimedia.html">Multimedia</a>
+					<ul class="listamulti">
+						<li><a href="#bloque2">Videos</a></li>
+						<li><a href="#bloque3">Fotografias</a></li>
+					</ul>
+				</li>
+				<li class="li"><a href="test.html">Test de la Huella Ecologica</a></li>
+				<li class="li"><a href="listas.html">Direcciones web</a></li>
+				<li class="li"><a href="mapas.html">Mapas </a></li>				
+			</ul>
+		</nav>
+</header>
+<body>
+	
+    <div id="wrapper">
+		
+
+        <section id="bloque1">
+
+            <img id="logo" src="" />
+            <h1 class="subtitulo">Archivos Multimedia</h1>
+    
+        </section>
+
+        <section id="bloque2">
+
+          
+
+           	<h5 class="tivideo">Animacion Ahorremos Agua</h5>
+			<article class="post">
+				
+			<!--	<p class="para">Podemos impedir el desgasto de agua</p> -->
+				<video controls class="video-filter" id="video">
+					<source src="img/anima.mp4" type=video/mp4 codecs="avc.h264,avc.42E01E,mp4a.40.2"/>
+				</video>
+				
+
+			</article>
+
+		
+
+
+
+        </section>
+
+		
+        <section id="bloque3">
+			<div id="InicioAncho">
+		<div id="slider">
+			<div class="elemento">
+				<a href="#"><img src="img/fotos/sol.jpg" alt=""/></a>
+				<p class="gancho">Lago Titicaca, cada vez mas contaminado</p>
+			</div>
+			<div class="elemento">
+				<a href="#"><img src="img/fotos/cordillera.png" alt=""/></a>
+				<p class="gancho">Cordillera descongelada, menos agua para nosotros</p>
+			</div>
+			<div class="elemento">
+				<a href="#"><img src="img/fotos/vital.jpg" alt=""/></a>
+				<p class="gancho">El plástico utilizado en las botellas de agua es malo para el planeta</p>
+			</div>
+			<div class="elemento">
+				<a href="#"><img src="img/fotos/peces.jpg" alt=""/></a>
+				<p class="gancho">Peces Muestos por la contanimacion de rios, lagos</p>
+			</div>
+			<div class="elemento">
+				<a href="#"><img src="img/fotos/foca.jpg" alt=""/></a>
+				<p class="gancho">Animales en Cautiverio, Zoologico de Lujan</p></br>
+				
+			</div>
+			<div class="elemento">
+				<a href="#"><img src="img/fotos/ping.jpg" alt=""/></a>
+				<p class="gancho"></p>
+			</div>
+			<div class="elemento">
+				<a href="#"><img src="img/fotos/fabrica.jpg" alt=""/></a>
+				<p class="gancho">Agua Contaminada con desperdicios quimicos!</p>
+			</div>
+			
+			<div class="elemento">
+				<a href="#"><img src="img/fotos/represa.jpg" alt=""/></a>
+				<p class="gancho">Represa de Hampaturi, bajo su reserva en un 95% por el gasto excesivo del agua</p>
+			</div>
+			<div class="elemento">
+				<a href="#"><img src="img/fotos/popo.jpg" alt=""/></a>
+				<p class="gancho">Se secó, Popoó </p>
+			</div>
+			<div class="elemento">
+				<a href="#"><img src="img/fotos/pez.jpg" alt=""/></a>
+				<p class="gancho">Peces, en cautiverio sin habitad</p>
+			</div>
+		</div>
+	</div>
+       
+		
+
+	
+
+        </section>
+
+
+    </div>
+
+
+</body>
+<footer>
+		<span>Creado por @Sergio P</span>
+</footer>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js' type='text/javascript'> </script>
+<script type="text/javascript">//<![CDATA[
+		$(function(){
+		    $('#slider div:gt(0)').hide();
+		    setInterval(function(){
+		      $('#slider div:first-child').fadeOut(0)
+		         .next('div').fadeIn(1000)
+		         .end().appendTo('#slider');}, 5000);
+		});
+	//]]></script>
+
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Agua</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+ 	<link href="img/recicla.png" type="image/x-icon" rel="shortcut icon" />
+
+</head>
+<header>
+		<figure><img src="img/conserva.jpg" alt="" /></figure>
+		<h1 class="hombre">AGUA</h1>
+		<nav>
+			<ul>
+				<li><a href="#">CUIDEMOS EL AGUA</a></li>
+				
+			</ul>
+		</nav>
+		<nav class="seleccion">
+			<ul class="lista">
+				<li class="li"><a href="index.html">Inicio</a></li>
+				<li class="li"><a href="multimedia.html">Multimedia</a>
+					<ul class="listamulti">
+						<li><a href="multimedia.html">Videos</a></li>
+						<li><a href="multimedia.html">Fotografias</a></li>
+					</ul>
+				</li>
+				<li class="li"><a href="test.html">Test de la Huella Ecologica</a></li>
+				<li class="li"><a href="listas.html">Direcciones web</a></li>
+				<li class="li"><a href="mapas.html">Mapas </a></li>			
+			</ul>
+		</nav>
+</header>
+<body>
+	
+    <div id="wrapper">
+		
+
+        <section id="bloque1">
+
+            <img id="logo" src="" />
+            <a href="#bloque2"><h1 class="subtitulo">Mapas</h1></a>
+            
+    
+        </section>
+
+        <section id="bloque2">
+			<h3 class="preguntas">Gasto Mundial del Agua por Año</h3>
+        	<div class="news">
+			<h1>Distribucion del agua por continentes</h1>
+			<article class="post">
+				<figure><img src="img/mundo1.png" alt=""></figure>
+				<p>  Selecciona un pais para redirigirte a su ubicacion y ver la cantidad de agua que consumen por año. </p>
+				<div class="news1">
+					<table>
+						<tr>
+							<td>Agua consumida</td>
+							<td>Paises</td>
+						</tr>
+						<tr>
+							<td><input class="agua" type="text" id="vale"></td>
+							<td><input class="agua" type="src" id="pais" ></td>
+						</tr>
+					</table>
+				</div>
+			</div>	
+
+			<div class="planeta">
+				 <map name="mundo" >
+           		<area id="eeuu" onclick=paises(this) shape="poly" coords="125,68,117,80,120,96,130,103,143,102,157,102,173,99,188,94,197,84,209,72,189,70,166,67,147,66,135,65" href="https://www.google.com/maps/place/Estados+Unidos/@36.2461589,-113.7236115,4z/data=!3m1!4b1!4m5!3m4!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891" target="_blank" alt="">
+           		<area id="china" onclick=paises(this) shape="poly" coords="535,69,530,80,515,85,525,100,519,118,499,121,478,117,458,110,446,93,447,47,477,74,497,77,522,67" href="https://www.google.com/maps/place/Estados+Unidos/@36.2461589,-113.7236115,4z/data=!3m1!4b1!4m5!3m4!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891" target="_blank" alt="">
+           		<area id="india" onclick=paises(this) shape="poly" coords="463,112,454,113,466,110,476,116,465,125,460,134,457,146,450,134,446,123,440,116" href="https://www.google.com/maps/place/India/@20.770685,73.7200303,5z/data=!3m1!4b1!4m5!3m4!1s0x30635ff06b92b791:0xd78c4fa1854213a6!8m2!3d20.593684!4d78.96288" target="_blank" alt="">
+           		<area id="pakistan" onclick=paises(this) shape="poly" coords="434,110,445,99,439,92,429,92,421,101,418,110,429,114" href="https://www.google.com/maps/place/Pakist%C3%A1n/@30.2919334,64.8542199,6z/data=!3m1!4b1!4m5!3m4!1s0x38db52d2f8fd751f:0x46b7a1f7e614925c!8m2!3d30.375321!4d69.345116" target="_blank" alt="">
+           		<area id="japon" onclick=paises(this) shape="circle" coords="552,91,11" href="https://www.google.com/maps/place/Jap%C3%B3n/@32.6943773,129.419494,5z/data=!3m1!4b1!4m5!3m4!1s0x34674e0fd77f192f:0xf54275d47c665244!8m2!3d36.204824!4d138.252924" target="_blank" alt="">
+           		<area id="tailandia" onclick=paises(this) shape="circle" coords="521,162,10" href="https://www.google.com/maps/place/Tailandia/@13.0110334,96.9923715,6z/data=!3m1!4b1!4m5!3m4!1s0x304d8df747424db1:0x9ed72c880757e802!8m2!3d15.870032!4d100.992541" target="_blank" alt="">
+           		<area id="indonesia" onclick=paises(this) shape="poly" coords="" href="https://www.google.com/maps/place/Indonesia/@-2.2759043,99.4534267,4z/data=!3m1!4b1!4m5!3m4!1s0x2c4c07d7496404b7:0xe37b4de71badf485!8m2!3d-0.789275!4d113.921327" target="_blank" alt="">
+           		<area id="mexico" onclick=paises(this) shape="poly" coords="131,104,165,104,182,99,183,114,176,104,157,107,157,127,175,144,161,138,140,129,122,98" href="https://www.google.com/maps/place/M%C3%A9xico/@23.3138112,-111.6488111,5z/data=!3m1!4b1!4m5!3m4!1s0x84043a3b88685353:0xed64b4be6b099811!8m2!3d23.634501!4d-102.552784" target="_blank" alt="">
+           		<area id="rusia" onclick=paises(this) shape="rect" coords="343,27,572,66" href="https://www.google.com/maps/place/Rusia/@49.7868813,68.7423619,3z/data=!3m1!4b1!4m5!3m4!1s0x453c569a896724fb:0x1409fdf86611f613!8m2!3d61.52401!4d105.318756" target="_blank" alt="">
+           		<area id="bolivia" onclick=paises(this) shape="poly" coords="192,186,206,186,218,199,211,207,205,207,199,199,199,187" href="https://www.google.com/maps/place/Bolivia/@-16.225652,-68.0461416,6z/data=!3m1!4b1!4m5!3m4!1s0x915edf8977bba295:0x1c9ec2bb0115edbf!8m2!3d-16.290154!4d-63.588653" target="_blank" alt="">
+           		<area id="brasil" onclick=paises(this) shape="circle" coords="231,180,15" href="https://www.google.com/maps/place/Brasil/@-13.6597399,-69.6854868,4z/data=!3m1!4b1!4m5!3m4!1s0x9c59c7ebcc28cf:0x295a1506f2293e63!8m2!3d-14.235004!4d-51.92528" target="_blank" alt="">
+           		<area id="argentina" onclick=paises(this) shape="rect" coords="206,213,223,266" href="https://www.google.com/maps/place/Argentina/@-37.0216643,-81.6261906,4z/data=!3m1!4b1!4m5!3m4!1s0x95bccaf5f5fdc667:0x3d2f77992af00fa8!8m2!3d-38.416097!4d-63.616672" target="_blank" alt="">
+           		<area id="canada" onclick=paises(this) shape="rect" coords="131,32,232,67" href="https://www.google.com/maps/place/Canad%C3%A1/@50.875352,-130.1476393,3z/data=!3m1!4b1!4m5!3m4!1s0x4b0d03d337cc6ad9:0x9968b72aa2438fa5!8m2!3d56.130366!4d-106.346771" target="_blank" alt="">
+           		<area id="africa" onclick=paises(this) shape="poly" coords="308,96,292,128,305,154,333,154,345,184,346,217,358,234,377,216,393,189,410,143,397,143,374,102,312,92" href="https://www.google.com/maps/place/%C3%81frica/@1.8295753,-16.2615306,3z/data=!3m1!4b1!4m5!3m4!1s0x10a06c0a948cf5d5:0x108270c99e90f0b3!8m2!3d-8.783195!4d34.508523" target="_blank" alt="">
+           		<area id="espana" onclick=paises(this) shape="circle" coords="326,70,11" href="https://www.google.com/maps/place/Espa%C3%B1a/@40.1300901,-8.2035992,6z/data=!3m1!4b1!4m5!3m4!1s0xc42e3783261bc8b:0xa6ec2c940768a3ec!8m2!3d40.463667!4d-3.74922" target="_blank" alt="">
+           		<area id="groenlandia" onclick=paises(this) shape="circle" coords="272,20,28" href="https://www.google.com/maps/place/Groenlandia/@67.8894622,-73.8499913,3z/data=!3m1!4b1!4m5!3m4!1s0x4ea20dbbe3c07715:0x34cf9d830114e218!8m2!3d71.706936!4d-42.604303" target="_blank" alt="">
+           		<area id="australia" onclick=paises(this) shape="circle" coords="555,215,40" href="https://www.google.com/maps/place/Australia/@-24.9877791,115.189764,4z/data=!3m1!4b1!4m5!3m4!1s0x2b2bfd076787c5df:0x538267a1955b1352!8m2!3d-25.274398!4d133.775136" target="_blank" alt="">
+           		<area id="venezuela" onclick=paises(this) shape="circle" coords="191,156,10" href="https://www.google.com/maps/place/Venezuela/@-24.9877791,115.189764,4z/data=!4m5!3m4!1s0x8c2853cb36cbd801:0xdca0f2587cd54dd3!8m2!3d6.42375!4d-66.58973" target="_blank" alt="">
+           		<area id="colombia" onclick=paises(this) shape="circle" coords="186,178,8" href="https://www.google.com/maps/place/Colombia/@4.6098031,-83.3872645,5z/data=!3m1!4b1!4m5!3m4!1s0x8e15a43aae1594a3:0x9a0d9a04eff2a340!8m2!3d4.570868!4d-74.297333" target="_blank" alt="">
+           		<area id="chile" onclick=paises(this) shape="rect" coords="195,205,207,262" href="https://www.google.com/maps/place/Chile/@-35.4080552,-106.2360563,4z/data=!3m1!4b1!4m5!3m4!1s0x9662c5410425af2f:0x505e1131102b91d!8m2!3d-35.675147!4d-71.542969" target="_blank" alt="">
+
+	            </map>
+	          
+           <img src="img/mundo1.png" usemap="#mundo" alt="">
+			
+			</div>
+          
+        </section>
+
+        <section id="bloque3">
+        		<h5 class="tivideo">MAPA DE REPRESAS EN LA BOLIVIA</h5>
+			<div>
+			<map name="bolivia">
+				<area id="pando" shape="poly" coords="27,89,60,93,186,23,188,61,95,121,60,160,31,100" href="#bloque7" target="_blank" alt="">
+				<area id="lapaz" shape="rect" coords="41,156,117,340" href="#bloque4" target="_blank" alt="">
+				<area id="beni" shape="circle" coords="201,183,80" href="#bloque8" target="_blank" alt="">
+				<area id="oruro" shape="circle" coords="89,383,35" href="#bloque5" target="_blank" alt="">
+				<area id="cochabamba" shape="circle" coords="168,344,38" href="#bloque10" target="_blank" alt="">
+				<area id="tarija" shape="rect" coords="164,451,291,503" href="#bloque11" target="_blank" alt="">
+				<area id="potosi" shape="circle" coords="120,452,30" href="#bloque6" target="_blank" alt="">
+				<area id="sucre" shape="circle" coords="191,388,30" href="#bloque12" target="_blank" alt="">
+
+				<area id="scruz" shape="circle" coords="334,345,80" href="#bloque9" target="_blank" alt="">
+
+			</map>
+			</map>
+			<img class="bolivia" src="img/boliviarios.jpg" usemap="#bolivia" alt="">
+      		
+			</div>
+            
+ 
+
+
+        </section>
+
+          <section id="bloque4">
+
+            <h5 class="tivideo">
+			MAPA DE REPRESAS EN LA PAZ	
+		</h5>
+		<div>
+			
+			
+		</div>
+      	<table>
+      		<tr>
+      			<img class="rios" src="img/lapaz.jpg" alt="">
+      			
+      		</tr>
+      		
+      		
+      	</table>
+		
+
+
+        </section>
+
+          <section id="bloque5">
+
+            <h5 class="tivideo">
+			MAPA DE REPRESAS EN ORURO
+		</h5>
+		<div>
+			
+			
+		</div>
+      	<table>
+      		<tr>
+      			<img class="rios" src="img/oruro.jpg" alt="">
+      			
+      		</tr>
+      	</table>
+		
+
+
+        </section>
+
+          <section id="bloque6">
+
+            <h5 class="tivideo">
+			MAPA DE REPRESAS EN LA POTOSI	
+		</h5>
+		<div>
+			
+			
+		</div>
+      	<table>
+      		<tr>
+      			<img class="rios" src="img/potosi.jpg" alt="">
+      			
+      		</tr>
+      	</table>
+		
+
+
+        </section>
+
+          <section id="bloque7">
+
+            <h5 class="tivideo">
+			MAPA DE REPRESAS EN PANDO
+		</h5>
+		<div>
+			
+			
+		</div>
+      	<table>
+      		<tr>
+      			<img class="rios" src="img/pando.jpg" alt="">
+      			
+      		</tr>
+      	</table>
+		
+
+
+        </section>
+          <section id="bloque8">
+
+            <h5 class="tivideo">
+			MAPA DE REPRESAS EN LA BENI	
+		</h5>
+		<div>
+			
+			
+		</div>
+      	<table>
+      		<tr>
+      			<img class="rios" src="img/beni.jpg" alt="">
+      			
+      		</tr>
+      	</table>
+		
+
+
+        </section>
+
+          <section id="bloque9">
+
+            <h5 class="tivideo">
+			MAPA DE REPRESAS EN SANTA CRUZ	
+		</h5>
+		<div>
+			
+			
+		</div>
+      	<table>
+      		<tr>
+      			<img class="rios" src="img/scruz.jpg" alt="">
+      			
+      		</tr>
+      	</table>
+		
+
+
+        </section>
+          <section id="bloque10">
+
+            <h5 class="tivideo">
+			MAPA DE REPRESAS EN COCHABAMBA	
+		</h5>
+		<div>
+			
+			
+		</div>
+      	<table>
+      		<tr>
+      			<img class="rios" src="img/cochabamba.jpg" alt="">
+      			
+      		</tr>
+      	</table>
+		
+
+
+        </section>
+          <section id="bloque11">
+
+            <h5 class="tivideo">
+			MAPA DE REPRESAS EN TARIJA	
+		</h5>
+		<div>
+			
+			
+		</div>
+      	<table>
+      		<tr>
+      			<img class="rios" src="img/tarija.jpg" alt="">
+      			
+      		</tr>
+      	</table>
+		
+
+
+        </section>
+          <section id="bloque12">
+
+            <h5 class="tivideo">
+			MAPA DE REPRESAS EN CHUQUISACA
+		</h5>
+		<div>
+			
+			
+		</div>
+      	<table>
+      		<tr>
+      			<img class="rios" src="img/sucre.jpg" alt="">
+      			
+      		</tr>
+      	</table>
+		
+
+
+        </section>
+
+
+       <script>
+	function total(a,b){
+		var s="";var t="",t1="",t2="",t3="",t4="",t5="",t6="",t7="",t8="";
+		var s1="",r="",r1="",r2="",r3="",r4="",r5="",r6="",r7="",r8="";
+		console.log("holi"+a)
+		console.log(b)
+		document.getElementById("vale").value=a
+		document.getElementById("pais").value=b
+	}
+
+	</script>
+	<SCRIPT LANGUAGE="JavaScript">
+
+		
+	function paises(b)
+	{ 	s="",t="",t1="",t2="",t3="",t4="",t5="",t6="",t7="",t8="";
+		s1="",r="",r1="",r2="",r3="",r4="",r5="",r6="",r7="",r8="";
+		switch(b.id){
+			case "eeuu":
+				t="470 km3";
+				r="Estados Unidos"
+				break;
+			case "china":
+				t="630 km3";
+				r="China"
+				break;
+			case "india":
+				t="646 km3";
+				r="India"
+				break;
+			case "pakistan":
+				t="169 km3";
+				r="Pakistan"
+				break;
+			case "japon":
+				t="88.4 km3";
+				r="Japon"
+				break;
+			case "tailandia":
+				t="87.1 km3";
+				r="Tailandia"
+				break;
+			case "indonesia":
+				t="82.8 km3";
+				r="Indonesia"
+				break;
+			case "mexico":
+				t="78.2 km3";
+				r="Mexico"
+				break;
+			case "rusia":
+				t="76.7 km3";
+				r="Rusia"
+				break;
+			case "bolivia":
+				t="10.7 km3";
+				r="Bolivia"
+				break;
+			case "brasil":
+				t="58.6 km3";
+				r="Brasil"
+				break;
+			case "argentina":
+				t="32.5 km3";
+				r="Argentina"
+				break;
+			case "canada":
+				t="15 km3";
+				r="Canada";
+				break;
+			case "africa":
+				t="54.91 km3";
+				r="Africa"
+				break;
+			case "espana":
+				t="4.74 km3";
+				r="España";
+				break;
+			case "groenlandia":
+				t="2.3 km3";
+				r="Bolivia";
+				break;
+			case "australia":
+				t="450 m3";
+				r="Australia";
+				break;
+			case "venezuela":
+				t="9.7 km3";
+				r="Venezuela";
+				break;
+			case "colombia":
+				t="12.65 km3";
+				r="Colombia"
+				break;
+			case "chile":
+				t="22.7 km3";
+				r="Chile";
+				break;
+			
+		}
+	s=s+t+t1+t2+t3+t4+t5+t6+t7+t8;
+	s1=s1+r+r1+r2+r3+r4+r5+r6+r7+r8
+	return total(s,s1);
+	}
+
+	</SCRIPT>
+
+    </div>
+
+
+</body>
+<footer>
+		<span>Creado por @Sergio P</span>
+</footer>
+</html>
